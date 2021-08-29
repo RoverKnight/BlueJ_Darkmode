@@ -1,0 +1,24 @@
+.tabbed-editor > .tab-header-area > .tab-header-background {
+    -fx-background-color: #313335; /* color behind the file-tabs */
+}
+
+.tabbed-editor > .tab-header-area .tab {
+    -fx-border-width: 0 0 0 0; /* adds padding onto file-tabs */
+    -fx-border-color: #00FF00; /* sets file-tab border color, but doesn't work */
+}
+.tabbed-editor > .tab-header-area .bj-tab-error .tab-label {
+    -fx-border-width : 0 0 2 0;
+    -fx-border-color: red;
+}
+.tabbed-editor > .tab-header-area .moe-tab:selected {
+    /* Remove border at bottom of tab when selected: */
+    -fx-background-color: rgb(200, 200, 200) !important; /* background color of file tabs */
+    -fx-border-color: transparent !important; /* idk */
+}
+.tabbed-editor > .tab-header-area  {
+    -fx-padding: 2 5 -1 10; /* adds padding around the group of all file-tabs */
+}
+
+.tabbed-editor .tab-close-button:hover {
+    -fx-background-color: darkred; /* color of file-tab close button when hovering over it */
+}

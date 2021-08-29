@@ -1,0 +1,84 @@
+/* There's a lot of things here for styling the editor! */
+
+.flow-top-bar {
+    -fx-padding: 0.75em 1em 0.75em 1em;
+    -fx-background-color:
+    /* border color of editor, cutting between code &
+    bar w/ "compile" "undo" etc. */
+    hsb(0, 0%, 50%),
+    /* background color of bar w/ "compile", "undo" etc. */
+    rgb(200, 200, 200); /* */
+    -fx-background-insets: 0 0 0 0, 0 0 1 0;
+}
+.flow-top-bar-buttons {
+    /*This is the minimum gap; more may be added in code using the
+      tile pane margins to separate different groups of buttons */
+    -fx-hgap: 0.5em;
+}
+.flow-top-bar-buttons > .button {
+    -fx-label-padding: 0 0.3em 0 0.3em;
+}
+.margin-and-text-line {
+    /* BACKGROUND COLOR BEHIND CODE (import statements)!!! */
+    -fx-background-color: #2b2b2b;
+    -fx-cursor: text;
+}
+.flow-margin-line {
+    /* border between line counter & code */
+    -fx-stroke: #606365;
+}
+.flow-margin-background {
+    /* INSTANCE 1 OF 2 of line counter background color */
+    -fx-background-color: #313335;
+    -fx-cursor: default;
+}
+.margin-and-text-line:bj-margin-uncompiled .flow-margin-background {
+    /* INSTANCE 2 OF 2 of line counter background color */
+    -fx-background-color: #313335;
+}
+.margin-and-text-line:bj-margin-error .flow-margin-background {
+    /* color shown on line counter to indicate an error */
+    -fx-background-color: hsb(0, 85%, 70%);
+}
+.moe-breakpoint-icon, .moe-step-mark-icon {
+    -fx-cursor: default;
+}
+
+/* font settings for line counter */
+.flow-line-label {
+    -fx-font-size: 13px;
+    -fx-alignment: center-right;
+    -fx-graphic-text-gap: 0;
+    -fx-label-padding: 0 2 0 0;
+    -fx-text-fill: #606365;
+    -fx-cursor: default;
+}
+.margin-and-text-line:bj-margin-error .flow-line-label {
+    /* text color shown on line counter to indicate an error */
+    -fx-text-fill: white;
+}
+.text-line .flow-selection {
+    /* color used to mark everything you select by holding
+     down the left mouse button and dragging (or to mark the
+     currently selected instance of a ctrl+f search) */
+    -fx-fill: #214283;
+    -fx-stroke: null;
+}
+.text-line .flow-find-result {
+    /* color used to mark all results of a search via ctrl+f */
+    -fx-fill: hsb(211, 20%, 99%);
+    -fx-stroke: null;
+}
+.text-line .flow-bracket-match {
+    /* color used to mark matching brackets (e.g. at the
+    beginning and end of a method) */
+    -fx-fill: #fde930;
+    -fx-stroke: null;
+}
+
+.line-container {
+    /* background color displayed behind code (seeable when
+    the file isn't long enough to fill out the complete vertical
+    window space) */
+    -fx-background-color: #2b2b2b;
+}

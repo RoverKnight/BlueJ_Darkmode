@@ -1,0 +1,35 @@
+/* Style for the tooltip-like display of an error message and suggested fixes and follow-ups */
+.error-fix-display, .suggested-followup-pane {
+    -fx-border-color: hsb(0, 85%, 70%); /* border color of error-popup */
+    -fx-background-color: #FF0000; /* doesn't work... or it's something else idk */
+    -fx-background-radius: 3; /* also doesn't work (i think) */
+    -fx-border-radius: 3; /* border roundness of error-popup */
+    -fx-padding: 5 5 5 5; /* idk */
+}
+
+.error-fix-display .label, .suggested-followup-pane .label {
+    -fx-text-fill: #A9B7C6; /* text color in popup when hovering over an error */
+}
+
+.error-fix-display .error-label {
+    -fx-padding: 0 0 2 0; /* provides extra space in the popup where there's no text */
+    -fx-wrap-text: true; /* idk */
+}
+
+.error-fix-display .fix-highlight { /* idk */
+    -fx-background-color: hsb(180, 30%, 40%); 
+}
+
+.suggested-followup-pane { /* idk */
+    -fx-max-width: 300;
+    -fx-spacing: 0.5em;
+}
+
+.suggested-followup-pane > .label { /* idk */
+    -fx-max-width: 290;
+    -fx-wrap-text: true;
+}
+
+.suggested-followup-pane > .suggested-followup-hbox { /* idk */
+    -fx-spacing: 1em;
+}

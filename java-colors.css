@@ -1,0 +1,113 @@
+.token-keyword1 {           /* Keywords: public, new */
+    -fx-fill: #cc7832;
+}
+.token-keyword2 {           /* Keywords: import, class, extends */
+    -fx-fill: #cc7832;
+}
+.token-keyword3 {           /* Keywords: super, this, null, true, false */
+    -fx-fill: #cc7832;
+}
+
+.token-comment-normal {     /* Normal comments */
+    -fx-fill: #808080;
+}
+.token-comment-javadoc {    /* Javadoc comments */
+    /* combined yellow hue w/ intJ javadoc saturation & intJ
+    keyword brightness */
+    -fx-fill: hsb(60, 60%, 80%);
+}
+.token-comment-standout {   /* Unknown; green */
+    -fx-fill: #00FF00;
+}
+
+.token-primitive {          /* Method return type */
+    -fx-fill: #cc7832;
+}
+.token-char-literal {       /* Char color (?) */
+	-fx-fill: #6a8759; 
+}
+.token-string-literal {     /* String color */
+    -fx-fill: #6a8759;
+}
+.token-label {              /* Unknown; bright purple */
+    -fx-fill: #ff00ff;
+}
+.token-invalid {            /* Unknown; bright green */
+    -fx-fill: #00FF00;
+}
+.token-default {            /* Default text color */
+    -fx-fill: #a9b7c6;
+}
+
+/* colors for all the different scopes (building blocks);
+only useful if they aren't set to transparent in your
+blueJ! also, they have all been set to the background color,
+because the given colors were meh and i'm lazy */
+.scope-colors {
+    /* general background color
+    Note that this color does not extend outside a class. For that,
+    you'll need to change -fx-background-color in .margin-and-text-line
+    which you'll find in the flow.css file */
+    -bj-background-color: #2b2b2b;
+
+    /* For the following, note that:
+    if (variableName.contains("inner") {
+        System.out.println("Sets inner border color");
+    }
+    else if (variableName.contains("outer") {
+        System.out.println("Sets outer border color");
+    }
+    else {
+        System.out.println("Sets fill color");
+    }
+    */
+    /* A note on hsb():
+    first parameter: hue (int, range: 0 to 360)
+        measure of degrees applied to a color wheel to pick
+        the color hue (hue -> h in hsb)
+    second parameter: saturation (int + "%", range: 0 to 100)
+        measures the saturation of the color (saturation ->
+        s in hsb)
+    third parameter: brightness (int + "%", range: 0 to 100)
+        measures the brightness of the color (brightness ->
+        b in hsb)
+    */
+    -bj-class-color: hsb(210, 35%, 25%); /* set to #2b2b2b for borders only */
+    -bj-class-outer-color: #3c3c3c;
+    -bj-class-inner-color: #3c3c3c;
+
+    -bj-method-color: hsb(0, 50%, 25%); /* set to #2b2b2b for borders only */
+    -bj-method-outer-color: #3c3c3c;
+
+    /* bj-selection is for try-catch, if, and possibly more */
+    -bj-selection-color: hsb(270, 35%, 25%); /* set to #2b2b2b for borders only */
+    -bj-selection-outer-color: #3c3c3c;
+
+    /* bj-iteration is for loops */
+    -bj-iteration-color: hsb(30, 50%, 25%); /* set to #2b2b2b for borders only */
+    -bj-iteration-outer-color: #3c3c3c;
+
+    /* idk what exactly a breakpoint or step overlay is and
+    they may actually be useful tools, so I left them untouched */
+    -bj-breakpoint-overlay-color: rgba(55, 235, 235, 0.6);
+    -bj-step-overlay-color: rgba(235, 115, 235, 0.6);
+}
+
+.moe-step-mark-icon {
+    /* idk */
+    -fx-fill: #00FF01;
+    -fx-stroke: white;
+}
+
+.moe-editor-pane {
+    /* idk */
+    -fx-background-color: #00FF02;
+    -fx-highlight-fill: hsb(150, 60%, 40%);
+}
+
+.moe-find-result {
+    -rtfx-background-color: #00FF03; // not sure what this does... ctrl+f highlighting is managed by -fx-highlight-fill
+}
+.moe-editor-pane .caret {
+   -fx-stroke: #00FF04;
+}

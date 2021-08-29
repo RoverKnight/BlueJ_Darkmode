@@ -1,0 +1,49 @@
+/*
+.terminal .virtual-flow {
+    -fx-gravity: rear;
+}
+*/
+.terminal-split {
+    -fx-orientation: vertical;
+}
+.terminal-output {
+    -fx-fill: #A9B7C6;
+    /*
+    Colors:
+    #92B662 : Linux Mint Green (faint)
+    #32CD32 : Hacker Green
+    */
+}
+.terminal-input {
+    -fx-fill: #3232DD;
+}
+.terminal-method-record {
+    -fx-fill: orangered;
+}
+/* settings for error messages */
+.terminal-error {
+    -fx-fill: hsb(0, 75%, 90%);
+}
+/* settings for stack traces (-> where it tells you where
+the error is) */
+.terminal-stack-link {
+    -fx-fill: hsb(0, 65%, 100%);
+    -rtfx-underline-color: hsb(0, 75%, 90%);
+    -rtfx-underline-width: 1;
+    -fx-cursor: hand;
+}
+/* settings for foreign stack traces (stack traces to files
+that the user has no control over) */
+.terminal-stack-foreign {
+    -fx-fill: hsb(211, 15%, 50%);
+}
+
+/* Show prompt text even when we are focused: */
+.terminal-input-field {
+    -fx-prompt-text-fill: #3232DD;
+}
+
+/* Slightly darker than white to make input field stand out: */
+.terminal, .terminal-error {
+    -fx-background-color: #2b2b2b;
+}

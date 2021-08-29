@@ -1,0 +1,5 @@
+.editor-menubar { /* Menu bar at the top of the window when editing files (where "class", "edit", etc. are; the bars below are somewhere else!) */
+    -fx-font-size: 13;
+    -fx-font-family: System;
+    -fx-background-colour: black;
+}
