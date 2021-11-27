@@ -10,14 +10,14 @@ How do I install this?
 ----------------------
 Simply copy-paste all .css files from this repository into the stylesheets
 folder inside your BlueJ directory (i.e. where BlueJ is installed) and
-replace the files that already there. It is recommended to back up the 
+replace the files that are already there. It is recommended to back up the 
 folder before copy-pasting these files, as you'll have to reinstall BlueJ
 if you want the normal theme back.
 
 Why is that part bright green/cyan?
 ----------------------------------
 If you find anything in a really bright green-/cyan-ish color, chances
-are I colored it like that to find where it applys changes and never found it.
+are I colored it like that to find where it applies changes and never found it.
 So if you ever find something like that, let me know and I'll see if I
 can fix it (if possible with a description of where and how you found it). 
 <br><br>
